@@ -1,0 +1,15 @@
+{
+  "name": "add-event-listeners",
+  "version": "1.0.1",
+  "description": "Like .addEventListener(), but add multiple listeners at one time.",
+  "main": "add-event-listeners.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "addEventListener",
+    "multiple"
+  ],
+  "author": "fwg",
+  "license": "ISC"
+}
