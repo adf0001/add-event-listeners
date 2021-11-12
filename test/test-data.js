@@ -4,11 +4,16 @@ add_event_listeners = require("../add-event-listeners.js");
 module.exports = {
 
 	"add_event_listeners()": function (done) {
-		document.getElementById('divResult3').innerHTML = "<span id='spClick' class='ht-cmd'>click to test</span>";
+		document.getElementById('divResult3').innerHTML =
+			"<span id='spClick' class='ht-cmd'>click to test</span> " +
+			"<span id='spClick2' class='ht-cmd'>click to test 2</span>";
 
-		add_event_listeners(document.getElementById("spClick"),
+		add_event_listeners(
+			"spClick",
 			["click", function () { alert("1") }],
 			["click", function () { alert("2") }],
+			"spClick2",
+			["click", function () { alert("2-1") }],
 		);
 
 		return "ui test";
